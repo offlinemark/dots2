@@ -22,5 +22,6 @@ for file in $files; do
 done
 
 ln -sv $dir/fish $target/.config/fish
+ln -sv $dir/fish/config.fish $target/.fishrc
 
 echo ">> DONE INFECTING!"
