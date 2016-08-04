@@ -1,0 +1,25 @@
+[user]
+	name = Mark Mossberg
+	email = mark@trailofbits.com
+[credential]
+	helper = osxkeychain
+[color]
+	ui = true
+[push]
+	default = simple
+[core]
+	editor = /usr/bin/vim
+	excludesfile = /Users/mark/.gitignore
+[alias]
+	s = "status -sb"
+    d = "diff"
+	st = "status"
+	a = "add"
+	au = "add -u"
+	c = "commit"
+	l = "log"
+	ll = "log --graph --oneline --all --decorate -n 25"
+	lll = "log --graph --oneline --all --decorate"
+	p = "push"
+	co = "checkout"
+	b = "branch"

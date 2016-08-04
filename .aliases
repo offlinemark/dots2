@@ -1,0 +1,50 @@
+# aliases
+alias xx="tmux"
+
+
+##listing files
+alias l="ls -lGH"
+alias ll="ls -1"
+alias lt="ls -ltGH"
+alias la="ls -laGH"
+alias lr="ls -lRGH"
+
+## git
+alias g="git status -sb"
+alias gg="git status"
+alias ga="git add"
+alias gu="git add -u"
+alias gb="git branch"
+alias gc="git commit"
+alias gco="git checkout"
+alias gd="git diff"
+alias gs="git stash"
+alias gm="git merge"
+alias gl="git log"
+alias gll="git log --graph --oneline --all --decorate -n 25"
+alias glll="git log --graph --oneline --all --decorate"
+alias gf="git ls-tree HEAD --full-tree -r"
+alias gdis="git checkout --"
+
+alias ..="pwd; cd ..; pwd; ls -lG"
+
+##misc
+alias ]="less" # because I pipe to less all the time
+alias cl="clear; pwd; l"
+alias gerp="grep -rn"
+alias m="make"
+alias pin="ping 8.8.8.8"
+alias psg="ps -fe | grep"
+alias public="curl http://canihazip.com/s/; echo ''"
+alias pyweb="python -m SimpleHTTPServer"
+alias rmd="rm -rf"
+alias thop="sudo htop"
+alias v="vagrant"
+
+##python
+alias py="python"
+alias ipy="ipython"
+alias nt="nosetests"
+alias veinit="virtualenv venv; veon"
+alias veon=". venv/bin/activate.fish"
+alias veoff="deactivate"
