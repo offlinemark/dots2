@@ -7,7 +7,7 @@
 echo ">> INFECTING!"
 dir=~/dots                    # dotfiles directory
 target=~
-files="vimrc vim tmux.conf gitignore gitconfig gdbinit aliases"    # list of files/folders to symlink in homedir
+files="abbr.fish vimrc vim tmux.conf gitignore gitconfig gdbinit aliases"    # list of files/folders to symlink in homedir
 
 ##########
 
