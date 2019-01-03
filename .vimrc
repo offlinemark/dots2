@@ -1,5 +1,33 @@
 source ~/.vimrc.local
 
+"vimplug setup
+call plug#begin('~/.vim/myplugins')
+
+" Vim plugins
+Plug 'tpope/vim-commentary'
+Plug 'scrooloose/nerdtree'
+Plug 'altercation/vim-colors-solarized'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ervandew/supertab'
+Plug 'ctrlpvim/ctrlp.vim'
+
+"Bundle 'scrooloose/syntastic'
+"Bundle 'tpope/vim-dispatch'
+"Bundle 'tomtom/tlib_vim'
+"Bundle 'MarcWeber/vim-addon-mw-utils'
+"Bundle 'garbas/vim-snipmate'
+"Bundle 'honza/vim-snippets'
+"Bundle 'majutsushi/tagbar'
+"Bundle 'dag/vim-fish'
+"Bundle 'kien/ctrlp.vim'
+"Bundle 'rust-lang/rust.vim'
+"Bundle 'rking/ag.vim'
+
+call plug#end()
+
+""""""""""""""""""""
+
 let mapleader = "\<Space>"
 " General
 filetype off
@@ -29,38 +57,13 @@ set t_Co=256 " vim-airline stuff
 set encoding=utf-8
 let g:airline_theme="solarized"
 set background=light
+let g:airline_powerline_fonts = 1
 colorscheme solarized
 hi Search cterm=NONE ctermfg=white ctermbg=blue
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '◀'
+" let g:airline_left_sep = '▶'
+" let g:airline_right_sep = '◀'
 let NERDTreeQuitOnOpen=1
 
-" Vundle Setup
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-
-" Vim plugins
-Bundle 'scrooloose/nerdtree'
-Bundle 'altercation/vim-colors-solarized'
-Plugin 'vim-airline/vim-airline-themes'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-dispatch'
-Bundle 'ervandew/supertab'
-Bundle 'tomtom/tlib_vim'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
-Bundle 'majutsushi/tagbar'
-Bundle 'dag/vim-fish'
-Bundle 'bling/vim-airline'
-Bundle 'sjl/gundo.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'rust-lang/rust.vim'
-Bundle 'rking/ag.vim'
-
-call vundle#end()
 
 " highlights excess whitespace
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
@@ -80,8 +83,8 @@ endfunc
 nnoremap <leader>n :call NumberToggle()<cr>
 
 " jump 5 lines with C-jk
-noremap <C-b> 5j
-noremap <C-h> 5k
+noremap <C-h> 5j
+noremap <C-u> 5k
 " jump 15 lines without moving cursor
 map <C-f> 15<C-e>
 map <C-g> 15<C-y>
@@ -192,3 +195,4 @@ let g:tagbar_type_rust = {
         \'i:impls,trait implementations',
     \]
     \}
+
