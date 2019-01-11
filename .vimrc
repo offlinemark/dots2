@@ -11,6 +11,7 @@ Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ervandew/supertab'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'majutsushi/tagbar'
 
 "Bundle 'scrooloose/syntastic'
 "Bundle 'tpope/vim-dispatch'

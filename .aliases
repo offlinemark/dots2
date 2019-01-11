@@ -1,5 +1,6 @@
 # aliases
 alias xx="tmux"
+alias e="vim"
 
 
 ##listing files
