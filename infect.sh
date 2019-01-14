@@ -25,6 +25,10 @@ done
 ln -sv $dir/fish $target/.config/
 ln -sv $dir/fish/config.fish $target/.fishrc
 
+touch ~/.vimrc.local
+
+# build-essential
+
 # fish
 # sudo apt-add-repository ppa:fish-shell/release-3
 # sudo apt update
