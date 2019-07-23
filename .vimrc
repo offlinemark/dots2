@@ -81,6 +81,8 @@ function! NumberToggle()
   endif
 endfunc
 
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard']
+
 nnoremap <leader>n :call NumberToggle()<cr>
 
 " jump 5 lines with C-jk
